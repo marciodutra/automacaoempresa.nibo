@@ -1,10 +1,47 @@
-const { Given, Then } = require('@cucumber/cucumber');
+const { Given, When, Then } = require('@cucumber/cucumber');
+
+const LoginPage = require('../pages/LoginPage');
 const OrganizationPage = require('../pages/OrganizationPage');
 
+const { getActiveTestUser } = require('../database/queries');
+const { decrypt } = require('../database/encryption');
 
-Given('I access the organization page', async function () {
 
-    await OrganizationPage.open();
+Given('I access the login page', async function () {
+
+    // O Before Hook já abre a página de login.
+
+});
+
+
+When('I enter a valid email', async function () {
+
+    this.user = await getActiveTestUser();
+
+    await LoginPage.fillEmail(this.user.email);
+
+});
+
+
+When('I continue to password step', async function () {
+
+    await LoginPage.clickContinue();
+
+});
+
+
+When('I enter a valid password', async function () {
+
+    const password = decrypt(this.user.password_encrypted);
+
+    await LoginPage.fillPassword(password);
+
+});
+
+
+When('I submit the login', async function () {
+
+    await LoginPage.clickLogin();
 
 });
 

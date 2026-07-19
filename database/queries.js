@@ -9,6 +9,7 @@ async function getActiveTestUser() {
             password_encrypted
         FROM test_users
         WHERE active = true
+        ORDER BY id DESC
         LIMIT 1;
     `;
 
@@ -21,6 +22,40 @@ async function getActiveTestUser() {
 }
 
 
+async function createTestUser(
+    name,
+    email,
+    encryptedPassword
+) {
+
+    const query = `
+        INSERT INTO test_users
+        (
+            name,
+            email,
+            password_encrypted,
+            active
+        )
+        VALUES
+        (
+            $1,
+            $2,
+            $3,
+            true
+        );
+    `;
+
+
+    await pool.query(query, [
+        name,
+        email,
+        encryptedPassword
+    ]);
+
+}
+
+
 module.exports = {
-    getActiveTestUser
+    getActiveTestUser,
+    createTestUser
 };

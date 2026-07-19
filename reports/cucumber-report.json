@@ -4,120 +4,6 @@
     "elements": [
       {
         "description": "",
-        "id": "organization;login-with-valid-user-and-validate-organization-page",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Login with valid user and validate organization page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 4740641799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I access the login page",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I enter a valid email",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I continue to password step",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I enter a valid password",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I submit the login",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I close the welcome popup if displayed",
-            "match": {
-              "location": "steps\\organization.steps.js:12"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I should see the my companies page displayed",
-            "match": {
-              "location": "steps\\organization.steps.js:19"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 609974400
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "organization",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Organization",
-    "tags": [],
-    "uri": "features\\organization.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
         "id": "user-registration;access-user-registration-page",
         "keyword": "Scenario",
         "line": 3,
@@ -128,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1579361100
+              "duration": 3613054100
             }
           },
           {
@@ -137,11 +23,11 @@
             "line": 5,
             "name": "I access the registration page",
             "match": {
-              "location": "steps\\registration.steps.js:6"
+              "location": "steps\\registration.steps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 2537189899
+              "duration": 2483023699
             }
           },
           {
@@ -150,11 +36,11 @@
             "line": 6,
             "name": "the registration page should be displayed",
             "match": {
-              "location": "steps\\registration.steps.js:12"
+              "location": "steps\\registration.steps.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 19581799
+              "duration": 33525899
             }
           },
           {
@@ -163,11 +49,11 @@
             "line": 7,
             "name": "the registration form fields should be displayed",
             "match": {
-              "location": "steps\\registration.steps.js:22"
+              "location": "steps\\registration.steps.js:31"
             },
             "result": {
               "status": "passed",
-              "duration": 17066699
+              "duration": 19999600
             }
           },
           {
@@ -176,11 +62,11 @@
             "line": 8,
             "name": "I fill in the registration form with valid data",
             "match": {
-              "location": "steps\\registration.steps.js:42"
+              "location": "steps\\registration.steps.js:60"
             },
             "result": {
               "status": "passed",
-              "duration": 123918100
+              "duration": 149167899
             }
           },
           {
@@ -189,11 +75,11 @@
             "line": 9,
             "name": "I confirm the registration",
             "match": {
-              "location": "steps\\registration.steps.js:50"
+              "location": "steps\\registration.steps.js:69"
             },
             "result": {
               "status": "passed",
-              "duration": 5728561400
+              "duration": 5915701900
             }
           },
           {
@@ -202,11 +88,11 @@
             "line": 10,
             "name": "the organization page should be displayed",
             "match": {
-              "location": "steps\\registration.steps.js:58"
+              "location": "steps\\registration.steps.js:86"
             },
             "result": {
               "status": "passed",
-              "duration": 19226099
+              "duration": 9831799
             }
           },
           {
@@ -214,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 520892800
+              "duration": 869813599
             }
           }
         ],
@@ -228,5 +114,134 @@
     "name": "User Registration",
     "tags": [],
     "uri": "features\\registration.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "organization;login-with-valid-user-and-validate-organization-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login with valid user and validate organization page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1922015999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I access the login page",
+            "match": {
+              "location": "steps\\organization.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 363199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I enter a valid email",
+            "match": {
+              "location": "steps\\organization.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118312699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I continue to password step",
+            "match": {
+              "location": "steps\\organization.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127198000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter a valid password",
+            "match": {
+              "location": "steps\\organization.steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 228032400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I submit the login",
+            "match": {
+              "location": "steps\\organization.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 874271799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I close the welcome popup if displayed",
+            "match": {
+              "location": "steps\\organization.steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5018313500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I should see the my companies page displayed",
+            "match": {
+              "location": "steps\\organization.steps.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11042900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 866226200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "organization",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Organization",
+    "tags": [],
+    "uri": "features\\organization.feature"
   }
 ]

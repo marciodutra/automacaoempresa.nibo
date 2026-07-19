@@ -1,8 +1,9 @@
 module.exports = {
-  default: {    
+  default: {
     paths: [
-  'features/**/*.feature'
-],
+      'features/registration.feature',
+      'features/organization.feature'
+    ],
     require: [
       'steps/**/*.js',
       'hooks/**/*.js'
@@ -11,6 +12,6 @@ module.exports = {
       'progress',
       'json:reports/cucumber-report.json'
     ],
-    publishQuiet: true,    
+    publishQuiet: true,
   }
 };
