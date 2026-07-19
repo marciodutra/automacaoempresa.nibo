@@ -1,0 +1,232 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "organization;login-with-valid-user-and-validate-organization-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login with valid user and validate organization page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4740641799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I access the login page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I enter a valid email",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I continue to password step",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter a valid password",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I submit the login",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I close the welcome popup if displayed",
+            "match": {
+              "location": "steps\\organization.steps.js:12"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I should see the my companies page displayed",
+            "match": {
+              "location": "steps\\organization.steps.js:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 609974400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "organization",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Organization",
+    "tags": [],
+    "uri": "features\\organization.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-registration;access-user-registration-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Access user registration page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1579361100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I access the registration page",
+            "match": {
+              "location": "steps\\registration.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2537189899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the registration page should be displayed",
+            "match": {
+              "location": "steps\\registration.steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19581799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the registration form fields should be displayed",
+            "match": {
+              "location": "steps\\registration.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17066699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I fill in the registration form with valid data",
+            "match": {
+              "location": "steps\\registration.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 123918100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I confirm the registration",
+            "match": {
+              "location": "steps\\registration.steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5728561400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the organization page should be displayed",
+            "match": {
+              "location": "steps\\registration.steps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19226099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 520892800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-registration",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Registration",
+    "tags": [],
+    "uri": "features\\registration.feature"
+  }
+]

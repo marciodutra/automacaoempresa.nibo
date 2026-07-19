@@ -1,0 +1,21 @@
+{
+  "name": "automacaonibo-playwright-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.9.0",
+    "@cucumber/pretty-formatter": "^4.0.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "multiple-cucumber-html-reporter": "^3.10.0"
+  },
+  "dependencies": {
+    "pg": "^8.22.0"
+  }
+}
