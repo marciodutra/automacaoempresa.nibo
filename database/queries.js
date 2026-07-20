@@ -5,6 +5,7 @@ async function getActiveTestUser() {
 
     const query = `
         SELECT 
+            id,
             email,
             password_encrypted
         FROM test_users
@@ -20,6 +21,7 @@ async function getActiveTestUser() {
     return result.rows[0];
 
 }
+
 
 
 async function createTestUser(
@@ -42,20 +44,60 @@ async function createTestUser(
             $2,
             $3,
             true
-        );
+        )
+        RETURNING id;
     `;
 
 
-    await pool.query(query, [
+    const result = await pool.query(query, [
         name,
         email,
         encryptedPassword
     ]);
 
+
+    return result.rows[0];
+
 }
+
+
+
+async function createTestCompany(
+    userId,
+    cnpj,
+    companyName
+) {
+
+    const query = `
+        INSERT INTO test_companies
+        (
+            user_id,
+            cnpj,
+            company_name,
+            active
+        )
+        VALUES
+        (
+            $1,
+            $2,
+            $3,
+            true
+        );
+    `;
+
+
+    await pool.query(query, [
+        userId,
+        cnpj,
+        companyName
+    ]);
+
+}
+
 
 
 module.exports = {
     getActiveTestUser,
-    createTestUser
+    createTestUser,
+    createTestCompany
 };

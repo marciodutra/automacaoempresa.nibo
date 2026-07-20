@@ -71,11 +71,14 @@ Given('I confirm the registration', async function () {
     await RegistrationPage.clickConfirmButton();
 
 
-    await createTestUser(
-        this.user.name,
-        this.user.email,
-        encrypt(this.user.password)
-    );
+    const createdUser = await createTestUser(
+    this.user.name,
+    this.user.email,
+    encrypt(this.user.password)
+);
+
+
+this.user.id = createdUser.id;
 
 
     await OrganizationPage.closeWelcomePopupIfDisplayed();

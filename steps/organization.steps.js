@@ -18,7 +18,9 @@ When('I enter a valid email', async function () {
 
     this.user = await getActiveTestUser();
 
-    await LoginPage.fillEmail(this.user.email);
+    await LoginPage.fillEmail(
+        this.user.email
+    );
 
 });
 
@@ -32,9 +34,14 @@ When('I continue to password step', async function () {
 
 When('I enter a valid password', async function () {
 
-    const password = decrypt(this.user.password_encrypted);
+    const password = decrypt(
+        this.user.password_encrypted
+    );
 
-    await LoginPage.fillPassword(password);
+
+    await LoginPage.fillPassword(
+        password
+    );
 
 });
 
@@ -55,11 +62,15 @@ Then('I close the welcome popup if displayed', async function () {
 
 Then('I should see the my companies page displayed', async function () {
 
-    const displayed = await OrganizationPage.isOrganizationPageDisplayed();
+    const displayed =
+        await OrganizationPage.isOrganizationPageDisplayed();
+
 
     if (!displayed) {
 
-        throw new Error('Organization page was not displayed');
+        throw new Error(
+            'Organization page was not displayed'
+        );
 
     }
 

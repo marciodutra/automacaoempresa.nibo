@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3613054100
+              "duration": 2911844099
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2483023699
+              "duration": 2542502300
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33525899
+              "duration": 31306199
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19999600
+              "duration": 16311599
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 149167899
+              "duration": 119836499
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5915701900
+              "duration": 6018121399
             }
           },
           {
@@ -88,11 +88,11 @@
             "line": 10,
             "name": "the organization page should be displayed",
             "match": {
-              "location": "steps\\registration.steps.js:86"
+              "location": "steps\\registration.steps.js:89"
             },
             "result": {
               "status": "passed",
-              "duration": 9831799
+              "duration": 12698099
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 869813599
+              "duration": 951165000
             }
           }
         ],
@@ -130,7 +130,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1922015999
+              "duration": 2213623299
             }
           },
           {
@@ -143,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 363199
+              "duration": 545799
             }
           },
           {
@@ -156,7 +156,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 118312699
+              "duration": 103333099
             }
           },
           {
@@ -165,11 +165,11 @@
             "line": 7,
             "name": "I continue to password step",
             "match": {
-              "location": "steps\\organization.steps.js:26"
+              "location": "steps\\organization.steps.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 127198000
+              "duration": 179270599
             }
           },
           {
@@ -178,11 +178,11 @@
             "line": 8,
             "name": "I enter a valid password",
             "match": {
-              "location": "steps\\organization.steps.js:33"
+              "location": "steps\\organization.steps.js:35"
             },
             "result": {
               "status": "passed",
-              "duration": 228032400
+              "duration": 195688699
             }
           },
           {
@@ -191,11 +191,11 @@
             "line": 9,
             "name": "I submit the login",
             "match": {
-              "location": "steps\\organization.steps.js:42"
+              "location": "steps\\organization.steps.js:49"
             },
             "result": {
               "status": "passed",
-              "duration": 874271799
+              "duration": 1076133499
             }
           },
           {
@@ -204,11 +204,11 @@
             "line": 10,
             "name": "I close the welcome popup if displayed",
             "match": {
-              "location": "steps\\organization.steps.js:49"
+              "location": "steps\\organization.steps.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 5018313500
+              "duration": 5009430000
             }
           },
           {
@@ -217,11 +217,11 @@
             "line": 11,
             "name": "I should see the my companies page displayed",
             "match": {
-              "location": "steps\\organization.steps.js:56"
+              "location": "steps\\organization.steps.js:63"
             },
             "result": {
               "status": "passed",
-              "duration": 11042900
+              "duration": 19561999
             }
           },
           {
@@ -229,7 +229,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 866226200
+              "duration": 1962542100
             }
           }
         ],
@@ -243,5 +243,186 @@
     "name": "Organization",
     "tags": [],
     "uri": "features\\organization.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "company;create-a-new-company",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Create a new company",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1419331399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I access the login page",
+            "match": {
+              "location": "steps\\organization.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 336400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter a valid email",
+            "match": {
+              "location": "steps\\organization.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140194999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I continue to password step",
+            "match": {
+              "location": "steps\\organization.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192436000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I enter a valid password",
+            "match": {
+              "location": "steps\\organization.steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 186391800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I submit the login",
+            "match": {
+              "location": "steps\\organization.steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1216963199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I close the welcome popup if displayed",
+            "match": {
+              "location": "steps\\organization.steps.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5004982399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I should see the my companies page displayed",
+            "match": {
+              "location": "steps\\organization.steps.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12060499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click add company",
+            "match": {
+              "location": "steps\\company.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 398330499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I fill the company registration form with valid data",
+            "match": {
+              "location": "steps\\company.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 402974300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I confirm company creation",
+            "match": {
+              "location": "steps\\company.steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 869014199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the company page should be displayed",
+            "match": {
+              "location": "steps\\company.steps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5563617700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 858168100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "company",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Company",
+    "tags": [],
+    "uri": "features\\Company.feature"
   }
 ]
