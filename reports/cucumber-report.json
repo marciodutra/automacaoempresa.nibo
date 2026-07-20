@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2911844099
+              "duration": 7235876000
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2542502300
+              "duration": 2538029699
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31306199
+              "duration": 29319999
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16311599
+              "duration": 14774400
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 119836499
+              "duration": 423819999
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6018121399
+              "duration": 6230908900
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12698099
+              "duration": 20413400
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 951165000
+              "duration": 1518950300
             }
           }
         ],
@@ -130,7 +130,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2213623299
+              "duration": 1504197899
             }
           },
           {
@@ -143,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 545799
+              "duration": 451600
             }
           },
           {
@@ -156,7 +156,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 103333099
+              "duration": 807547999
             }
           },
           {
@@ -169,7 +169,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 179270599
+              "duration": 1224612099
             }
           },
           {
@@ -182,7 +182,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 195688699
+              "duration": 46074300
             }
           },
           {
@@ -195,7 +195,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1076133499
+              "duration": 774278699
             }
           },
           {
@@ -208,7 +208,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5009430000
+              "duration": 5009727300
             }
           },
           {
@@ -221,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19561999
+              "duration": 16355900
             }
           },
           {
@@ -229,7 +229,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1962542100
+              "duration": 633835899
             }
           }
         ],
@@ -243,186 +243,5 @@
     "name": "Organization",
     "tags": [],
     "uri": "features\\organization.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "company;create-a-new-company",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Create a new company",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1419331399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "I access the login page",
-            "match": {
-              "location": "steps\\organization.steps.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 336400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "I enter a valid email",
-            "match": {
-              "location": "steps\\organization.steps.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 140194999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I continue to password step",
-            "match": {
-              "location": "steps\\organization.steps.js:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 192436000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I enter a valid password",
-            "match": {
-              "location": "steps\\organization.steps.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 186391800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I submit the login",
-            "match": {
-              "location": "steps\\organization.steps.js:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1216963199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "I close the welcome popup if displayed",
-            "match": {
-              "location": "steps\\organization.steps.js:56"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5004982399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "I should see the my companies page displayed",
-            "match": {
-              "location": "steps\\organization.steps.js:63"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12060499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I click add company",
-            "match": {
-              "location": "steps\\company.steps.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 398330499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "I fill the company registration form with valid data",
-            "match": {
-              "location": "steps\\company.steps.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 402974300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "I confirm company creation",
-            "match": {
-              "location": "steps\\company.steps.js:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 869014199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "the company page should be displayed",
-            "match": {
-              "location": "steps\\company.steps.js:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5563617700
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 858168100
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "company",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Company",
-    "tags": [],
-    "uri": "features\\Company.feature"
   }
 ]
