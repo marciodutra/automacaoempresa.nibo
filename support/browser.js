@@ -10,21 +10,50 @@ async function launchBrowser() {
         headless: false
     });
 
-    context = await browser.newContext();
+    context = await browser.newContext({
+
+        recordVideo: {
+            dir: 'evidencias/videos/',
+            size: {
+                width: 1920,
+                height: 1080
+            }
+        }
+
+    });
+
+    await context.tracing.start({
+
+        screenshots: true,
+        snapshots: true
+
+    });
 
     page = await context.newPage();
 
-    await page.goto('https://empresa.nibo.com.br/', {
-    waitUntil: 'domcontentloaded'
-});
+    await page.goto(
+        'https://empresa.nibo.com.br/',
+        {
+            waitUntil: 'domcontentloaded'
+        }
+    );
 
     return page;
+
 }
 
 async function closeBrowser() {
 
+    if (context) {
+
+        await context.close();
+
+    }
+
     if (browser) {
+
         await browser.close();
+
     }
 
 }
@@ -35,8 +64,17 @@ function getPage() {
 
 }
 
+function getContext() {
+
+    return context;
+
+}
+
 module.exports = {
+
     launchBrowser,
     closeBrowser,
-    getPage
+    getPage,
+    getContext
+
 };

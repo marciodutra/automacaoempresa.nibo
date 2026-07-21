@@ -2,7 +2,8 @@ module.exports = {
   default: {
     paths: [
       'features/registration.feature',
-      'features/organization.feature'
+      'features/organization.feature',
+      'features/Company.feature'
     ],
     require: [
       'steps/**/*.js',

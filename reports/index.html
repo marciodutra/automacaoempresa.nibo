@@ -31,13 +31,13 @@
   color: #73879c;
   background: #f7f7f7;
   font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.471;
 }
 
 .main_container {
-  padding: 10px 20px 0;
+  padding: 20px 30px 0;
 }
 
 i span {
@@ -819,6 +819,79 @@ body.darkmode .navbar-text {
   color: #b4bfca !important;
 }
 
+a[data-bs-toggle="collapse"] {
+  display: inline-block;
+  padding: 5px 12px;
+  margin: 3px;
+  border-radius: 4px;
+  background: #e9ecef;
+  color: #495057;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+a[data-bs-toggle="collapse"]:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+a[data-bs-toggle="collapse"] {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 3px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+a[data-bs-toggle="collapse"]:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.attachments a {
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.attachments a i {
+    margin-right: 5px;
+}
+
+.attachments a {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: #337ab7;
+    color: white !important;
+    text-decoration: none;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.attachments a:hover {
+    opacity: 0.8;
+}
+
+a[data-bs-toggle="collapse"] {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background: #337ab7;
+    color: white !important;
+    text-decoration: none;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+a[data-bs-toggle="collapse"]:hover {
+    opacity: 0.8;
+}
+
             
         </style>
     </head>
@@ -867,7 +940,7 @@ body.darkmode .navbar-text {
         <tr>
             <td class="chart">
                 <canvas id="feature-chart"></canvas>
-                <div class="total">2</div>
+                <div class="total">3</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -932,7 +1005,7 @@ body.darkmode .navbar-text {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">2</div>
+                <div class="total">3</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -1070,7 +1143,7 @@ body.darkmode .navbar-text {
                     
                     <tr>
                         <td>
-                            <a href="features/3e8ca1a3-2f18-4efa-9c33-03337877729d-user-registration.html">User Registration</a>
+                            <a href="features/9a3957f2-366a-4b2b-ad60-74602df73e9c-user-registration.html">User Registration</a>
                         </td>
                         <td class="text-center">
                             
@@ -1139,10 +1212,10 @@ body.darkmode .navbar-text {
                             
                         
                         
-                        <td>2026/07/18 21:46:51</td>
+                        <td>2026/07/20 16:45:43</td>
                         
                         
-                        <td>00:00:09.257</td>
+                        <td>00:00:13.954</td>
                         
                         <td class="text-right ">1</td>
                         <td class="text-right ">1</td>
@@ -1155,7 +1228,7 @@ body.darkmode .navbar-text {
                     
                     <tr>
                         <td>
-                            <a href="features/1b99ab92-6c3a-40be-bab6-57ec9dd01883-organization.html">Organization</a>
+                            <a href="features/c1699fef-aaad-440a-b15b-3d3e4966ee7c-organization.html">Organization</a>
                         </td>
                         <td class="text-center">
                             
@@ -1224,10 +1297,95 @@ body.darkmode .navbar-text {
                             
                         
                         
-                        <td>2026/07/18 21:46:51</td>
+                        <td>2026/07/20 16:45:43</td>
                         
                         
-                        <td>00:00:07.879</td>
+                        <td>00:00:11.425</td>
+                        
+                        <td class="text-right ">1</td>
+                        <td class="text-right ">1</td>
+                        <td class="text-right none">0</td>
+                        
+                        
+                        
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="features/f497a000-a39c-4ae5-8236-ffc4365bd22f-company.html">Company</a>
+                        </td>
+                        <td class="text-center">
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                        <td class="text-center">
+                            
+                            
+                            
+                            
+                            
+                            
+                            <i class="fa fa-check-circle passed-color fa-lg" data-bs-toggle="tooltip" data-placement="top" title="Passed">
+                                <span>check-circle passed-color</span>
+                            </i>
+                        </td>
+                        
+                            <td class="text-center">
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-desktop fa-lg" data-bs-toggle="tooltip" data-placement="top" title="Desktop">
+                                    <span>desktop</span>
+                                </i>
+                            </td>
+                            <td>
+                                
+                                
+                                
+                                
+                                Windows 11
+                            </td>
+                            <td>
+                                
+                                
+                                
+                                
+                                <i class="fa fa-windows fa-lg"><span>windows</span></i>
+                                11
+                            </td>
+                            
+                            
+                            <td>
+                                
+                                
+                                
+                                
+                                
+                                
+                                <i class="fa fa-question-circle not-defined-color fa-lg">
+                                    <span>chromium</span></i>
+                                Playwright
+                                
+
+                                
+                            </td>
+                            
+                        
+                        
+                        <td>2026/07/20 16:45:43</td>
+                        
+                        
+                        <td>00:00:22.086</td>
                         
                         <td class="text-right ">1</td>
                         <td class="text-right ">1</td>
@@ -1326,7 +1484,7 @@ body.darkmode .navbar-text {
                         ],
                         datasets: [{
                             data: [
-                                2,
+                                3,
                                 0,
                                 0,
                                 0,
@@ -1365,7 +1523,7 @@ body.darkmode .navbar-text {
                         ],
                         datasets: [{
                             data: [
-                                2,
+                                3,
                                 0,
                                 0,
                                 0,

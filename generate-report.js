@@ -1,7 +1,9 @@
 const report = require('multiple-cucumber-html-reporter');
 
 report.generate({
+
     jsonDir: './reports',
+
     reportPath: './reports',
 
     pageTitle: 'Nibo Automation Report',
@@ -11,6 +13,10 @@ report.generate({
     displayDuration: true,
 
     displayReportTime: true,
+
+    displayFooter: false,
+
+customCss: './custom.css',
 
     metadata: {
         browser: {
@@ -37,4 +43,5 @@ report.generate({
             }
         ]
     }
+
 });
