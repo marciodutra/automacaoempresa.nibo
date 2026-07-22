@@ -1,15 +1,19 @@
-const { Pool } = require('pg');
+const path = require('path');
+const dotenv = require('dotenv');
 
-
-const pool = new Pool({
-
-    user: 'postgres',
-    host: 'localhost',
-    database: 'automacao_nibo_test',
-    password: 'Md@051080',
-    port: 5432,
-
+dotenv.config({
+    path: path.resolve(__dirname, '../config/.env')
 });
 
+
+const { Pool } = require('pg');
+
+const pool = new Pool({
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT
+});
 
 module.exports = pool;

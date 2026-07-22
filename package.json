@@ -1,15 +1,22 @@
 {
   "name": "automacaonibo-playwright-framework",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright + Cucumber automation framework",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-  "test": "cucumber-js && node generate-report.js && start reports\\index.html"
+  "test": "cucumber-js && npm run report",
+  "report": "node generate-report.js && start reports\\index.html",
+  "test:report": "npm test"
 },
-  "keywords": [],
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "automation",
+    "qa"
+  ],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "@cucumber/cucumber": "^12.9.0",
     "@cucumber/pretty-formatter": "^4.0.0",
@@ -18,6 +25,7 @@
     "multiple-cucumber-html-reporter": "^3.10.0"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "pg": "^8.22.0",
     "winston": "^3.19.0"
   }

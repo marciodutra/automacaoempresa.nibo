@@ -74,4 +74,11 @@ Then('I should see the my companies page displayed', async function () {
 
     }
 
+    const context = require('../support/browser').getContext();
+
+const cookies = await context.cookies();
+
+console.log(JSON.stringify(cookies, null, 2));
+
 });
+
