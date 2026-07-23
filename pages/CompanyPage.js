@@ -39,14 +39,14 @@ class CompanyPage {
 
     async selectCompanySource(option) {
 
-        const page = getPage();
+    const page = getPage();
 
 
-        await page.locator(
-            `#${option}`
-        ).click();
+    await page.locator(
+        `#${option}`
+    ).check();
 
-    }
+}
 
 
     async clickCreateCompany() {
