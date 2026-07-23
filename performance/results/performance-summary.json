@@ -1,0 +1,9 @@
+{
+  "testName": "Smoke Test",
+  "vus": 1,
+  "iterations": 1,
+  "avg": "98.4 ms",
+  "p95": "156.86 ms",
+  "failed": "0%",
+  "duration": "3.6 s"
+}

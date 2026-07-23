@@ -31,13 +31,13 @@
   color: #73879c;
   background: #f7f7f7;
   font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.471;
 }
 
 .main_container {
-  padding: 20px 30px 0;
+  padding: 10px 20px 0;
 }
 
 i span {
@@ -819,77 +819,110 @@ body.darkmode .navbar-text {
   color: #b4bfca !important;
 }
 
-a[data-bs-toggle="collapse"] {
-  display: inline-block;
-  padding: 5px 12px;
-  margin: 3px;
-  border-radius: 4px;
-  background: #e9ecef;
-  color: #495057;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 12px;
-}
+/* ==============================
+   REPORT ACTION BUTTONS
+============================== */
 
-a[data-bs-toggle="collapse"]:hover {
-  text-decoration: none;
-  opacity: 0.8;
-}
+
+/* Todos os botões */
 
 a[data-bs-toggle="collapse"] {
-  display: inline-block;
-  padding: 6px 14px;
-  margin: 3px;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 12px;
-  transition: 0.2s;
-}
 
-a[data-bs-toggle="collapse"]:hover {
-  opacity: 0.85;
-  text-decoration: none;
-}
+    display: inline-flex !important;
 
-.attachments a {
-    margin-right: 15px;
-    font-weight: 600;
-}
+    align-items: center;
+    justify-content: center;
 
-.attachments a i {
-    margin-right: 5px;
-}
+    gap: 6px;
 
-.attachments a {
-    display: inline-block;
-    padding: 6px 12px;
-    border-radius: 4px;
-    background: #337ab7;
-    color: white !important;
-    text-decoration: none;
-    margin-right: 8px;
-    font-weight: 600;
-}
+    padding: 7px 14px !important;
 
-.attachments a:hover {
-    opacity: 0.8;
-}
+    margin: 5px;
 
-a[data-bs-toggle="collapse"] {
-    display: inline-block;
-    padding: 6px 12px;
     border-radius: 5px;
-    background: #337ab7;
-    color: white !important;
-    text-decoration: none;
-    margin-right: 8px;
+
+    font-size: 13px;
+
     font-weight: 600;
+
+    color: white !important;
+
+    text-decoration: none !important;
+
+    transition: .2s;
+
 }
 
-a[data-bs-toggle="collapse"]:hover {
-    opacity: 0.8;
+
+/* INFO / LOG */
+
+a[href*="-text"] {
+
+    background: #3498db !important;
+
+}
+
+
+/* SCREENSHOT */
+
+a[href*="-image"] {
+
+    background: #1abb9c !important;
+
+}
+
+
+/* VIDEO */
+
+a[href*="-video"] {
+
+    background: #e74c3c !important;
+
+}
+
+
+/* HOVER */
+
+a[href*="-text"]:hover,
+a[href*="-image"]:hover,
+a[href*="-video"]:hover {
+
+    opacity: .85;
+
+}
+
+
+/* ICONES */
+
+a[href*="-text"]::before {
+
+    content:"\f15c";
+
+}
+
+
+a[href*="-image"]::before {
+
+    content:"\f03e";
+
+}
+
+
+a[href*="-video"]::before {
+
+    content:"\f03d";
+
+}
+
+
+a[href*="-text"]::before,
+a[href*="-image"]::before,
+a[href*="-video"]::before {
+
+    font-family: FontAwesome;
+
+    margin-right:6px;
+
 }
 
             
@@ -1143,7 +1176,7 @@ a[data-bs-toggle="collapse"]:hover {
                     
                     <tr>
                         <td>
-                            <a href="features/e1aca419-4e40-47d5-9b49-1cb2b672f6d0-user-registration.html">User Registration</a>
+                            <a href="features/c1a43048-5bce-4a3f-8eb6-4208728c5a19-user-registration.html">User Registration</a>
                         </td>
                         <td class="text-center">
                             
@@ -1212,10 +1245,10 @@ a[data-bs-toggle="collapse"]:hover {
                             
                         
                         
-                        <td>2026/07/20 16:45:43</td>
+                        <td>2026/07/22 16:54:42</td>
                         
                         
-                        <td>00:00:14.431</td>
+                        <td>00:00:22.525</td>
                         
                         <td class="text-right ">1</td>
                         <td class="text-right ">1</td>
@@ -1228,7 +1261,7 @@ a[data-bs-toggle="collapse"]:hover {
                     
                     <tr>
                         <td>
-                            <a href="features/4c1213c6-62a9-48f9-9d9c-65907bb33fc3-organization.html">Organization</a>
+                            <a href="features/5191ff56-a62d-4ed6-936a-531e89d456f3-organization.html">Organization</a>
                         </td>
                         <td class="text-center">
                             
@@ -1297,10 +1330,10 @@ a[data-bs-toggle="collapse"]:hover {
                             
                         
                         
-                        <td>2026/07/20 16:45:43</td>
+                        <td>2026/07/22 16:54:42</td>
                         
                         
-                        <td>00:00:12.779</td>
+                        <td>00:00:20.479</td>
                         
                         <td class="text-right ">1</td>
                         <td class="text-right ">1</td>
@@ -1313,7 +1346,7 @@ a[data-bs-toggle="collapse"]:hover {
                     
                     <tr>
                         <td>
-                            <a href="features/b9e7d620-a5c4-4073-8d6b-5b8451707dd3-company.html">Company</a>
+                            <a href="features/42f50843-0852-4f33-b08b-2d4653c1070c-company.html">Company</a>
                         </td>
                         <td class="text-center">
                             
@@ -1382,10 +1415,10 @@ a[data-bs-toggle="collapse"]:hover {
                             
                         
                         
-                        <td>2026/07/20 16:45:43</td>
+                        <td>2026/07/22 16:54:42</td>
                         
                         
-                        <td>00:00:25.062</td>
+                        <td>00:00:35.512</td>
                         
                         <td class="text-right ">1</td>
                         <td class="text-right ">1</td>
@@ -1408,7 +1441,79 @@ a[data-bs-toggle="collapse"]:hover {
         </div>
          
             <div class="created-by">
-                <p>Maintained by Wasiq Bhamla. Find me on:</p>
+                <p>
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    Performance Tests (k6)
+                </h3>
+            </div>
+
+
+            <div class="panel-body">
+
+
+                <table class="table table-bordered table-striped">
+
+                    <tbody>
+
+                        <tr>
+                            <th>Virtual Users</th>
+                            <td>1</td>
+                        </tr>
+
+
+                        <tr>
+                            <th>Duration</th>
+                            <td>3.6 s</td>
+                        </tr>
+
+
+                        <tr>
+                            <th>Iterations</th>
+                            <td>1</td>
+                        </tr>
+
+
+                        <tr>
+                            <th>Average Response</th>
+                            <td>98.4 ms</td>
+                        </tr>
+
+
+                        <tr>
+                            <th>P95</th>
+                            <td>156.86 ms</td>
+                        </tr>
+
+
+                        <tr>
+                            <th>Failed Requests</th>
+                            <td>0%</td>
+                        </tr>
+
+
+                    </tbody>
+
+
+                </table>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+Maintained by Wasiq Bhamla. Find me on:</p>
                 <a href="https://www.youtube.com/@WasiqBhamla" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a>
                 <a href="https://github.com/WasiqB/" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
                 <a href="https://www.linkedin.com/in/wasiqbhamla/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
