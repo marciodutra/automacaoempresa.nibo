@@ -3,7 +3,8 @@ module.exports = {
     paths: [
       'features/registration.feature',
       'features/organization.feature',
-      'features/Company.feature'
+      'features/Company.feature',
+      'features/first-steps.feature'
     ],
     require: [
       'steps/**/*.js',
