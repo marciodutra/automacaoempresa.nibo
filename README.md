@@ -373,13 +373,3 @@ Gerenciamento	NPM
 Customização	CSS próprio + Patch Script
 Execução	Scripts automatizados
 
-Um ponto importante: com a integração do k6 no mesmo relatório, o framework saiu de um framework de testes UI e virou uma estrutura mais próxima de um framework de qualidade completo, porque agora cobre:
-
-teste funcional
-teste de regressão
-evidências
-rastreabilidade
-teste de carga
-métricas de performance
-
-O próximo passo natural (quando você quiser) seria documentar isso como arquitetura do framework e preparar para apresentação em portfólio/GitHub.
